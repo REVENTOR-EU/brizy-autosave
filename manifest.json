@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "Brizy Autosave",
+  "version": "1.0",
+  "description": "An autosave Chrome extension for web applications, pressing Ctrl+S every 5 minutes on activated tabs. Created by REVENTOR.",
+  "author": "REVENTOR | Web Agency",
+  "homepage_url": "https://reventor.eu",
+  "permissions": [
+    "scripting",
+    "activeTab",
+    "storage",
+    "alarms"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "options_page": "options.html",
+  "action": {
+    "default_icon": "icons/icon128.png",
+    "default_popup": "options.html",
+    "default_title": "Brizy Autosave Settings"
+  },
+  "icons": {
+    "128": "icons/icon128.png"
+  }
+}
